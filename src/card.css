@@ -1,0 +1,22 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-image: linear-gradient(#c2e59c, #64b3f4);
+  transition: all .5s;
+  box-shadow: 0 2px 5px 2px rgba(58, 62, 68, 1);
+}
+.card:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  gap: 25px;
+}
